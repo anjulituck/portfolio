@@ -1,0 +1,132 @@
+/* VARIABLES & MIXINS */
+:root{
+    --mint:#C4F0A8;
+    --black:#2E2C2F;
+    --green:#1D5F2F;
+}
+
+
+/* CUSTOM FONTS */
+
+@font-face {
+    font-family: 'Example';
+    src: url('path-to-fonts/Example-Regular.woff2') format('woff2'),
+         url('path-to-fonts/Example-Regular.woff') format('woff');
+  }
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+
+}
+
+/* Styling Body */
+
+body{
+     background-color:var(--mint);
+}
+
+ /* Header Stylings */
+.header{
+     padding:20px;
+     background-color:var(--mint);
+     color: var(--black);
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     border-bottom: solid 5px var(--black);
+}
+
+.header h1{
+     display:inline-block;
+     font-size: 4.2rem;
+     color:var(--green);
+     text-transform:uppercase;
+}
+
+.header nav{
+     padding: top 15px;
+     margin:20px;
+     float:right;
+     font-size:1.8rem;
+}
+
+.header ul{
+     list-style-type:none;
+}
+
+.header ul li{
+     display:inline-block;
+     margin-left:25px;
+}
+
+a{
+       color:var(--black);
+       text-decoration:none;
+       text-transform:uppercase;
+}
+a:hover{
+        color:var(--green);
+        text-decoration: underline;
+}
+
+p{
+       font-size:1rem;
+}
+
+   /* STYLINGS FOR HERO SECTION */
+
+.hero{
+       height: 60vh;
+       width:100vw;
+       border-bottom: solid 5px var(--black);
+       background-image:url("./assets/images/anjulituck.jpg");
+       background-size: cover;
+       background-position:center;
+}
+
+.hero img{
+       height: 50vh;
+       width:15vw;
+       border: solid 5px var(--green);
+       margin:50px 0px 20px 50px;
+}
+
+.hero h3{
+       float:right;
+       margin-top:5%;
+       margin-right:10%;
+       border: solid 5px var(--green);
+       padding:2%;
+       font-size:2.7rem;
+       background-color: var(--green);
+       color:var(--mint);
+}
+
+.content{
+   width:80%;
+   margin-left:10%;
+   margin-right:10%;
+}
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
