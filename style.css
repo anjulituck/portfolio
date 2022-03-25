@@ -5,15 +5,6 @@
     --green:#1D5F2F;
 }
 
-
-/* CUSTOM FONTS */
-
-@font-face {
-    font-family: 'Example';
-    src: url('path-to-fonts/Example-Regular.woff2') format('woff2'),
-         url('path-to-fonts/Example-Regular.woff') format('woff');
-  }
-
 *{
     box-sizing:border-box;
     margin:0;
@@ -112,24 +103,84 @@ p{
 
 .content{
    width:100%;
-   padding: top 2%;
+   height:600px;
+   padding:20px 50px 20px 50px;
    display:flex;
-   flex-wrap:wrap;
    flex-direction:column;
-   justify-content:flex-start;
-   align-items: center;
-
+   justify-content:center;
+   align-items:space-evenly;
 }
 
-.about{
-    width: 100%;
+.about,.work,.contact{
     display:flex;
-    justify-content:space-between;
-    align-items: center;
+    justify-content:flex-start;
+    align-items:space-between;
+    margin-bottom:20px;
 }
 
 .about h2, .work h2, .contact h2{
-    font-size:3.16rem;
+    font-size:3.16vw;
+    padding-right:20px;
+    text-align:right;
+    width:30%;
+}
+
+.about-excerpt, .projects, .contact-info{
+    padding-left:20px;
+    padding-right:40px;
+    border-left: solid 5px var(--green);
+    width:70%;
+}
+
+.projects{
+    display:flex; 
+    flex-wrap:wrap;
+    align-items:stretch;
+    justify-content:space-evenly;
+}
+
+.weskincare{
+    background-image:url(./assets/images/weskincare.png);
+    background-position:center;
+    background-size:cover; 
+    border: solid 5px var(--green);
+    flex: 1 1 400px;
+}
+
+.gooddog{
+    background-image:url(./assets/images/gooddog.png);
+    background-position:center;
+    background-size:cover; 
+    border: solid 5px var(--green);
+}
+
+.mu{
+    background-image:url(./assets/images/muicecream.png);
+    background-position:center;
+    background-size:cover; 
+    border: solid 5px var(--green);
+}
+
+.studiojunk{
+    background-image:url(./assets/images/anjulituck.jpg);
+    background-position:center;
+    background-size:cover; 
+    border: solid 5px var(--green);
+}
+
+.recycle {
+    background-image:url(./assets/images/pexels-anna-shvets-3962260\ 2.jpg);
+    background-position:center;
+    background-size:cover; 
+    border: solid 5px var(--green);
+}
+
+.contact-info ul {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:center;
+    list-style-type:none;
 }
 
 .footer{
