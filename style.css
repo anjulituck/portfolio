@@ -20,7 +20,7 @@ body{
 
  /* Header Stylings */
 .header{
-     padding:30px;
+     padding-top:10px;
      background-color:var(--mint);
      color: var(--black);
      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -103,7 +103,7 @@ p{
 
 .content{
    width:100%;
-   height:600px;
+   height:800px;
    padding:20px 50px 20px 50px;
    display:flex;
    flex-direction:column;
@@ -114,8 +114,8 @@ p{
 .about,.work,.contact{
     display:flex;
     justify-content:flex-start;
-    align-items:space-between;
-    margin-bottom:20px;
+    align-items:space-evenly;
+    margin-bottom:60px;
 }
 
 .about h2, .work h2, .contact h2{
@@ -136,7 +136,8 @@ p{
     display:flex; 
     flex-wrap:wrap;
     align-items:stretch;
-    justify-content:space-evenly;
+    justify-content:space-around !important;
+
 }
 
 .weskincare{
@@ -144,7 +145,7 @@ p{
     background-position:center;
     background-size:cover; 
     border: solid 5px var(--green);
-    flex: 1 1 400px;
+    flex: 1 0 400px;
 }
 
 .gooddog{
@@ -152,6 +153,8 @@ p{
     background-position:center;
     background-size:cover; 
     border: solid 5px var(--green);
+    padding:20px;
+    margin-bottom:20px;
 }
 
 .mu{
@@ -159,6 +162,8 @@ p{
     background-position:center;
     background-size:cover; 
     border: solid 5px var(--green);
+    padding:20px;
+    margin-bottom:20px;
 }
 
 .studiojunk{
@@ -166,6 +171,8 @@ p{
     background-position:center;
     background-size:cover; 
     border: solid 5px var(--green);
+    height:50%;
+    width: 50%; 
 }
 
 .recycle {
@@ -173,6 +180,7 @@ p{
     background-position:center;
     background-size:cover; 
     border: solid 5px var(--green);
+    width:50%;
 }
 
 .contact-info ul {
