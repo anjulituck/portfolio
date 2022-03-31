@@ -12,10 +12,16 @@
 
 }
 
+@font-face {
+    font-family:Matrix;
+    src: url(/assets/fonts\BNMatrix.otf);
+  }
+
 /* Styling Body */
 
 body{
      background-color:var(--mint);
+     font-family:Matrix;
 }
 
  /* Header Stylings */
@@ -23,7 +29,7 @@ body{
      padding-top:10px;
      background-color:var(--mint);
      color: var(--black);
-     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-family: 'Matrix', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
      border-bottom: solid 5px var(--black);
      display:flex;
      justify-content:space-between;
@@ -42,6 +48,7 @@ body{
 .header nav{
      font: size 1.8vw;
      margin: 7px 0;
+     font-family:'Matrix';
 }
 
 .header nav ul {
@@ -82,6 +89,7 @@ p{
        justify-content:space-evenly;
        align-items:center;
        flex-wrap:wrap;
+       
 }
 
 .hero img{
@@ -99,16 +107,18 @@ p{
        background-color: var(--green);
        color:var(--mint);
        border: solid 5px var(--mint);
+       font-family: 'Matrix';
 }
 
 .content{
    width:100%;
-   height:800px;
-   padding:20px 50px 20px 50px;
+   height: 220vh;
+   padding:10px 50px 10px 50px;
    display:flex;
    flex-direction:column;
    justify-content:center;
-   align-items:space-evenly;
+   align-content:space-between;
+   
 }
 
 .about,.work,.contact{
@@ -117,12 +127,17 @@ p{
     align-items:space-evenly;
     margin-bottom:60px;
 }
-
+.work{
+    height:170vh;
+}
 .about h2, .work h2, .contact h2{
     font-size:3.16vw;
     padding-right:20px;
     text-align:right;
     width:30%;
+    color:var(--green);
+    text-transform: uppercase;
+    font-family: 'Matrix';
 }
 
 .about-excerpt, .projects, .contact-info{
@@ -135,9 +150,9 @@ p{
 .projects{
     display:flex; 
     flex-wrap:wrap;
-    align-items:stretch;
-    justify-content:space-around !important;
-
+    align-items:flex-start;
+    justify-content:space-between !important;
+    border-left: solid 5px var(--green);
 }
 
 .weskincare{
@@ -145,16 +160,33 @@ p{
     background-position:center;
     background-size:cover; 
     border: solid 5px var(--green);
-    flex: 1 0 400px;
+    height:30%;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
 }
+
+.weskincare h3, .weskincare p, .gooddog h3, .gooddog p, .mu h3, .mu p, .studiojunk h3, .studiojunk p, .recycle h3, .recycle p{
+    background: var(--mint) !important;
+    text-align:center;
+    padding:1%;
+    width:12vw;
+    font-size:1.2rem;
+
+}
+
 
 .gooddog{
     background-image:url(./assets/images/gooddog.png);
     background-position:center;
     background-size:cover; 
     border: solid 5px var(--green);
-    padding:20px;
-    margin-bottom:20px;
+    height:30%;
+    width:60%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
 }
 
 .mu{
@@ -162,8 +194,11 @@ p{
     background-position:center;
     background-size:cover; 
     border: solid 5px var(--green);
-    padding:20px;
-    margin-bottom:20px;
+    height:30%;
+    width:35%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
 }
 
 .studiojunk{
@@ -171,8 +206,11 @@ p{
     background-position:center;
     background-size:cover; 
     border: solid 5px var(--green);
-    height:50%;
-    width: 50%; 
+    height:30%;
+    width:35%; 
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
 }
 
 .recycle {
@@ -180,7 +218,11 @@ p{
     background-position:center;
     background-size:cover; 
     border: solid 5px var(--green);
-    width:50%;
+    height:30%;
+    width:60%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
 }
 
 .contact-info ul {
@@ -189,6 +231,18 @@ p{
     justify-content:space-between;
     align-items:center;
     list-style-type:none;
+}
+
+.contact-info a {
+    text-decoration: none;
+    text-transform: uppercase; 
+    color:var(--black);
+    font-size: 1.2rem;
+}
+
+.contact-info a:hover{
+    text-decoration: underline;
+    font-weight:bolder;
 }
 
 .footer{
@@ -202,6 +256,8 @@ p{
     color:var(--mint);
     text-align:center;
 }
+
+
 
 
 
