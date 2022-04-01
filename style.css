@@ -24,6 +24,8 @@
     font-style: normal;
 }
 
+
+
 /* Styling Body */
 
 body{
@@ -105,6 +107,7 @@ p{
        border: solid 5px var(--green);
 }
 
+
 .hero h3{
        width:30%;
        text-align:center;
@@ -171,23 +174,22 @@ p{
     width:100%;
     display:flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content:flex-end;
+    opacity:.7;
 }
 
-.weskincare:not(.title h3, .title p){
-    opacity:.5;
-}
-
-.weskincare:not(.title h3, .title p):hover{
+.weskincare:hover{
     opacity:1;
 }
 
+
 .weskincare h3, .weskincare p, .gooddog h3, .gooddog p, .mu h3, .mu p, .studiojunk h3, .studiojunk p, .recycle h3, .recycle p{
-    background: var(--mint) !important;
+    background: var(--black) !important;
     text-align:center;
     padding:2%;
     width:14vw;
     font-size:1.5vw;
+    color:var(--mint);
 }
 
 
@@ -200,7 +202,12 @@ p{
     width:60%;
     display:flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content:flex-end;
+    opacity:.7;
+}
+
+.gooddog:hover{
+    opacity:1;
 }
 
 .mu{
@@ -212,7 +219,12 @@ p{
     width:35%;
     display:flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content:flex-end;
+    opacity:.7;
+}
+
+.mu:hover{
+    opacity:1;
 }
 
 .studiojunk{
@@ -224,7 +236,12 @@ p{
     width:35%; 
     display:flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content:flex-end;
+    opacity:.7;
+}
+
+.studiojunk:hover{
+    opacity:1;
 }
 
 .recycle {
@@ -236,7 +253,12 @@ p{
     width:60%;
     display:flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content:flex-end;
+    opacity:.7;
+}
+
+.recycle:hover{
+    opacity:1;
 }
 
 .contact-info ul {
