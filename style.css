@@ -15,10 +15,13 @@
 @font-face {
     font-family:'Matrix';
     src: url('/assets/fonts/bnmatrix-webfont.woff2') format('woff2'),
-         url('/assets/fonts/bnmatrix-webfont.woff') format('woff');
+         url('/assets/fonts/bnmatrix-webfont.woff') format('woff'), 
+         url('/assets/fonts/BNMatrixRegular.eot'),
+         url('/assets/fonts/BNMatrixRegular.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/BNMatrixRegular.ttf') format('truetype'),
+         url('/assets/fonts/BNMatrixRegular.svg') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 /* Styling Body */
@@ -39,20 +42,20 @@ body{
      justify-content:space-between;
      align-items:center;
      flex-wrap:wrap;
+     height:15vh;
 }
 
 .header h1{
      font-weight:bold;
-     font-size: 4.2rem;
+     font-size: 5vw;
      color:var(--green);
      text-transform:uppercase;
      margin-left:10px;
 }
 
 .header nav{
-     font: size 1.8vw;
+     font-size: 2vw;
      margin: 7px 0;
-     font-family:'Matrix' !important;
 }
 
 .header nav ul {
@@ -77,7 +80,7 @@ body{
 }
 
 p{
-       font-size:1rem;
+       font-size:1.5vw;
 }
 
    /* STYLINGS FOR HERO SECTION */
@@ -98,20 +101,20 @@ p{
 
 .hero img{
        height: 50vh;
-       width:15vw;
+       width:16vw;
        border: solid 5px var(--green);
 }
 
 .hero h3{
        width:30%;
-       text-align:left;
+       text-align:center;
        padding:2%;
        border: solid 5px var(--green);
        font-size:2.7vw;
        background-color: var(--green);
        color:var(--mint);
        border: solid 5px var(--mint);
-       font-family: 'Matrix';
+       
 }
 
 .content{
@@ -171,13 +174,20 @@ p{
     justify-content:center;
 }
 
+.weskincare:not(.title h3, .title p){
+    opacity:.5;
+}
+
+.weskincare:not(.title h3, .title p):hover{
+    opacity:1;
+}
+
 .weskincare h3, .weskincare p, .gooddog h3, .gooddog p, .mu h3, .mu p, .studiojunk h3, .studiojunk p, .recycle h3, .recycle p{
     background: var(--mint) !important;
     text-align:center;
-    padding:1%;
-    width:12vw;
-    font-size:1.2rem;
-
+    padding:2%;
+    width:14vw;
+    font-size:1.5vw;
 }
 
 
@@ -241,7 +251,7 @@ p{
     text-decoration: none;
     text-transform: uppercase; 
     color:var(--black);
-    font-size: 1.2rem;
+    font-size: 1.2vw;
 }
 
 .contact-info a:hover{
@@ -256,7 +266,7 @@ p{
 }
 
 .footer p{
-    font-size:.8rem;
+    font-size: .8rem;
     color:var(--mint);
     text-align:center;
 }
