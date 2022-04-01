@@ -13,15 +13,19 @@
 }
 
 @font-face {
-    font-family:Matrix;
-    src: url(/assets/fonts\BNMatrix.otf);
-  }
+    font-family:'Matrix';
+    src: url('/assets/fonts/bnmatrix-webfont.woff2') format('woff2'),
+         url('/assets/fonts/bnmatrix-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 /* Styling Body */
 
 body{
      background-color:var(--mint);
-     font-family:Matrix;
+     font-family:'Matrix';
 }
 
  /* Header Stylings */
@@ -29,7 +33,7 @@ body{
      padding-top:10px;
      background-color:var(--mint);
      color: var(--black);
-     font-family: 'Matrix', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-family: 'Matrix', Arial, sans-serif;
      border-bottom: solid 5px var(--black);
      display:flex;
      justify-content:space-between;
@@ -48,7 +52,7 @@ body{
 .header nav{
      font: size 1.8vw;
      margin: 7px 0;
-     font-family:'Matrix';
+     font-family:'Matrix' !important;
 }
 
 .header nav ul {
