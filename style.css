@@ -79,7 +79,6 @@ body{
 .header nav ul li a:hover{
         color:var(--green);
         text-decoration: underline;
-}
 
 p{
        font-size:1.5vw;
