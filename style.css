@@ -192,6 +192,14 @@ p{
     color:var(--mint);
 }
 
+.title a{
+    color:var(--mint);
+    text-decoration:none;
+}
+
+.title a:hover{
+    font-style: italic;
+}
 
 .gooddog{
     background-image:url(./assets/images/gooddog.png);
@@ -384,6 +392,7 @@ p{
         text-align:left;
     }
 
+    .we
     .contact-info ul{
         flex-direction: column;
         align-items: center;
