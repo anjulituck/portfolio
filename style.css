@@ -298,14 +298,102 @@ p{
     .header{
        align-items:center;
        justify-content:center;
+       flex-direction: column;
+       height:30vh;
+       flex-wrap:nowrap;
+    }
+
+    .header h1{
+        font-size:10vw;
+    }
+
+    .header nav ul{
+        align-items:space-evenly; 
+        justify-content:center;
+        flex-direction:column;
+    }
+
+    .header nav ul li a{
+        font-size: 1rem;
+    }
+
+    .hero{
+        height:70vh;
     }
 
     .hero img{
         display:none;
     }
 
+    .hero h3{
+        margin-right:150px;
+        font-size:1.2rem;
+    }
+
+    .content{
+        height:300vh;
+    }
+
+    .about,.work,.contact{
+        flex-direction: column;
+        align-items:center;
+        justify-content:space-evenly;
+        margin-bottom: 10px;
+    }
+
+    .work{
+        height:220vh;
+    }
+
+    .about h2, .work h2, .contact h2{
+        font-size:5.3vw;
+        padding:0px;
+        width:100%;
+        text-align:center;
+        margin-bottom:20px;
+    }
     
+    .about-excerpt{
+        font-size:1.2rem;
+    }
+
+    .about-excerpt, .projects, .contact-info{
+        width:100%;
+        padding-right:0px;
+    }
+
+  
+    .projects{
+        flex-direction:column;
+        align-items:center;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        height: 200vh;
+    }
+
+    .weskincare, .mu, .gooddog, .studiojunk, .recycle{
+        width:100%;
+        height:60%;
     
+    }
+
+    .weskincare h3, .weskincare p, .gooddog h3, .gooddog p, .mu h3, .mu p, .studiojunk h3, .studiojunk p, .recycle h3, .recycle p{
+        width:45%;
+        height:20%;
+        font-size:1.2rem;
+        text-align:left;
+    }
+
+    .contact-info ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-evenly;
+        flex-wrap: nowrap;
+    }
+
+    .contact-info ul a{
+        font-size:1.3em;
+    }
 }
 
 
