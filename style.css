@@ -80,8 +80,8 @@ body{
         color:var(--green);
         text-decoration: underline;
 
-p{
-       font-size:1.5vw;
+p {
+       font-size:1.5rem;
 }
 
    /* STYLINGS FOR HERO SECTION */
