@@ -184,12 +184,13 @@ p {
 }
 
 
-.HOFDLA h3, .HOFDLA p, .gooddog h3, .gooddog p, .mu h3, .mu p, .studiojunk h3, .studiojunk p, .recycle h3, .recycle p{
+.HOFDLA h3, .HOFDLA p, .barkr h3, .barkr p, .mu h3, .mu p, .studiojunk h3, .studiojunk p, .recycle h3, .recycle p{
     background: var(--black) !important;
     text-align:left;
     padding-top:3%;
     padding-left:2%;
     width:20vw;
+    height:20%;
     font-size:1.8vw;
     color:var(--mint);
 }
@@ -203,8 +204,8 @@ p {
     font-style: italic;
 }
 
-.gooddog{
-    background-image:url(./assets/images/gooddog.png);
+.barkr{
+    background-image:url(./assets/images/barkr.png);
     background-position:center;
     background-size:cover; 
     border: solid 5px var(--green);
@@ -216,7 +217,7 @@ p {
     opacity:.7;
 }
 
-.gooddog:hover{
+.barkr:hover{
     opacity:1;
 }
 
@@ -381,15 +382,15 @@ p {
         height: 200vh;
     }
 
-    .HOFDLA, .mu, .gooddog, .studiojunk, .recycle{
+    .HOFDLA, .mu, .barkr, .studiojunk, .recycle{
         width:100%;
         height:60%;
     
     }
 
-    .HOFDLA h3, .HOFDLA p, .gooddog h3, .gooddog p, .mu h3, .mu p, .studiojunk h3, .studiojunk p, .recycle h3, .recycle p{
+    .HOFDLA h3, .HOFDLA p, .barkr h3, .barkr p, .mu h3, .mu p, .studiojunk h3, .studiojunk p, .recycle h3, .recycle p{
         width:45%;
-        height:20%;
+        height: 30%;
         font-size:1.2rem;
         text-align:left;
     }
