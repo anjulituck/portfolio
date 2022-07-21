@@ -191,7 +191,7 @@ p {
     padding-left:2%;
     width:20vw;
     height:20%;
-    font-size:1.8vw;
+    font-size:1.4vw;
     color:var(--mint);
 }
 
@@ -391,7 +391,7 @@ p {
     .HOFDLA h3, .HOFDLA p, .barkr h3, .barkr p, .mu h3, .mu p, .studiojunk h3, .studiojunk p, .recycle h3, .recycle p{
         width:45%;
         height: 30%;
-        font-size:.75rem;
+        font-size:1rem;
         text-align:left;
     }
 
