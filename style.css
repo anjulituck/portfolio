@@ -189,9 +189,9 @@ p {
     text-align:left;
     padding-top:3%;
     padding-left:2%;
-    width:20vw;
+    width:21vw;
     height:20%;
-    font-size:.75rem !important;
+    font-size:1.6rem !important;
     color:var(--mint);
 }
 
