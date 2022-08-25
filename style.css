@@ -184,7 +184,7 @@ p {
 }
 
 
-.HOFDLA h3, .HOFDLA p, .barkr h3, .barkr p, .mu h3, .mu p, .studiojunk h3, .studiojunk p, .recycle h3, .recycle p{
+.HOFDLA h3, .HOFDLA p, .barkr h3, .barkr p, .mu h3, .mu p, .ism h3, .ism p, .recycle h3, .recycle p{
     background: var(--black) !important;
     text-align:left;
     padding-top:3%;
@@ -238,8 +238,8 @@ p {
     opacity:1;
 }
 
-.studiojunk{
-    background-image:url(./assets/images/anjulituck.jpg);
+.ism{
+    background-image:url(./assets/images/ISM.gif);
     background-position:center;
     background-size:cover; 
     border: solid 5px var(--green);
@@ -251,7 +251,7 @@ p {
     opacity:.7;
 }
 
-.studiojunk:hover{
+.ism:hover{
     opacity:1;
 }
 
@@ -382,13 +382,13 @@ p {
         height: 200vh;
     }
 
-    .HOFDLA, .mu, .barkr, .studiojunk, .recycle{
+    .HOFDLA, .mu, .barkr, .ism, .recycle{
         width:100%;
         height:60%;
     
     }
 
-    .HOFDLA h3, .HOFDLA p, .barkr h3, .barkr p, .mu h3, .mu p, .studiojunk h3, .studiojunk p, .recycle h3, .recycle p{
+    .HOFDLA h3, .HOFDLA p, .barkr h3, .barkr p, .mu h3, .mu p, .ism h3, .ism p, .recycle h3, .recycle p{
         width:45%;
         height: 30%;
         font-size:1rem;
